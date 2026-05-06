@@ -1,0 +1,25 @@
+services:
+
+  # ── Dev (hot reload) ──────────────────────────────────────────────
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app                      # mount source code → hot reload
+      - /app/node_modules           # keep container node_modules
+      - /app/.next                  # keep .next cache inside container
+    environment:
+      - WATCHPACK_POLLING=true      # needed on Linux for file watching
+    restart: unless-stopped
+
+  # ── Prod ─────────────────────────────────────────────────────────
+  prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
