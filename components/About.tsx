@@ -4,14 +4,15 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const terminal = [
-  { cmd: '$ whoami', out: 'amzazi — CS student, CTF enthusiast, developer' },
-  { cmd: '$ cat interests.txt', out: 'Binary exploitation · Web security · System design · Open source' },
-  { cmd: '$ ls skills/', out: 'Python  C  JavaScript  Next.js  Linux  GDB  Pwntools' },
+  { cmd: '$ whoami', out: 'ait-abd-saad-eddine — 2nd year CS @ ENSA Marrakech' },
+  { cmd: '$ cat interests.txt', out: 'Binary exploitation · Web security · MLOps · DevOps · Hackathons' },
+  { cmd: '$ ls skills/', out: 'Java  Python  TypeScript  Spring MVC  FastAPI  Next.js  Docker  GitHub Actions' },
+  { cmd: '$ cat achievements.txt', out: '1st place Hack4Aero · 3 Hackathons · 4 CTFs · Enactus National Semi-finalist' },
   { cmd: '$ echo $STATUS', out: 'Actively learning. Always building. ▌' },
 ]
 
 const stats = [
-  { value: '5+', label: 'Projects built', labelFr: 'Projets réalisés' },
+  { value: '6+', label: 'Projects built', labelFr: 'Projets réalisés' },
   { value: '4', label: 'CTFs competed', labelFr: 'CTFs complétés' },
   { value: '3', label: 'Hackathons', labelFr: 'Hackathons' },
 ]
