@@ -13,7 +13,6 @@ const projects = [
     descriptionFr:
       'Lead Backend : authentification JWT, 2FA SMS OTP, rate limiting et journal d\'audit via AOP @AfterReturning. Conteneurisation multi-stage (Maven → Tomcat 10.1 JRE 21), docker-compose override local/prod. Git Flow, protection main, équipe de 5. CI/CD GitHub Actions : tests JUnit, Jacoco 70%, Docker push ghcr.io, déploiement SSH rolling update avec rollback.',
     year: '2026',
-    link: '#',
   },
   {
     index: '02',
@@ -49,7 +48,6 @@ const projects = [
     descriptionFr:
       'Intégration dans une application Next.js à la Faculté de Médecine de Marrakech. Développement de la fonctionnalité d\'affichage des résultats d\'examens.',
     year: '2025',
-    link: '#',
   },
   {
     index: '05',
@@ -61,7 +59,7 @@ const projects = [
     descriptionFr:
       'Conception et optimisation des requêtes base de données avec JDBC/Hibernate, implémentation de la couche d\'accès aux données (DAO).',
     year: '2025',
-    link: '#',
+    link: 'https://github.com/AitSaad0/Co-voiturage/',
   },
   {
     index: '06',
@@ -73,7 +71,6 @@ const projects = [
     descriptionFr:
       'Application web complète de gestion des étudiants avec opérations CRUD et intégration base de données.',
     year: '2025',
-    link: '#',
   },
 ]
 
