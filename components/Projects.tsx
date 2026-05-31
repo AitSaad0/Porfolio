@@ -5,18 +5,30 @@ import { useRef, useState } from 'react'
 const projects = [
   {
     index: '01',
-    title: 'OrcaML — MLOps Platform',
-    subtitle: 'Model deployment · REST API · FastAPI · DevOps',
-    tags: ['FastAPI', 'Python', 'Docker', 'CI/CD'],
+    title: 'OkaneTransfer — Money Transfer Platform',
+    subtitle: 'Lead Backend · Spring MVC · Docker · CI/CD · Git Flow',
+    tags: ['Java', 'Spring MVC', 'Angular', 'Docker', 'GitHub Actions'],
     description:
-      'Deployed ML models as isolated Docker containers reachable within the container network and externally for predictions, using the Docker SDK from a custom base image. Built CRUD REST API endpoints with FastAPI, applied CI/CD practices, and maintained the full deployment pipeline.',
+      'Lead Backend: JWT authentication, 2FA SMS OTP, rate limiting (5 req/10 min/IP) and audit logging via AOP @AfterReturning. Multi-stage containerization (Maven → Tomcat 10.1 JRE 21), docker-compose with local/prod override. Git Flow strategy with main branch protection across a 5-member team. CI/CD pipeline: JUnit tests, Jacoco 70%, Docker push to ghcr.io, SSH rolling deployment with automatic rollback.',
     descriptionFr:
-      'Déploiement de modèles ML en conteneurs Docker isolés, accessibles en réseau interne et en externe pour les prédictions, via le SDK Docker depuis une image de base personnalisée. Endpoints REST CRUD avec FastAPI, CI/CD et maintenance du pipeline de déploiement.',
+      'Lead Backend : authentification JWT, 2FA SMS OTP, rate limiting et journal d\'audit via AOP @AfterReturning. Conteneurisation multi-stage (Maven → Tomcat 10.1 JRE 21), docker-compose override local/prod. Git Flow, protection main, équipe de 5. CI/CD GitHub Actions : tests JUnit, Jacoco 70%, Docker push ghcr.io, déploiement SSH rolling update avec rollback.',
     year: '2026',
     link: '#',
   },
   {
     index: '02',
+    title: 'OrcaML — MLOps Platform',
+    subtitle: 'FastAPI · Next.js · Docker SDK · OAuth2 · CI/CD',
+    tags: ['FastAPI', 'Python', 'Next.js', 'TypeScript', 'Docker', 'CI/CD'],
+    description:
+      'Built a CRUD REST API with FastAPI and PostgreSQL. Developed the frontend with Next.js / TypeScript / Tailwind CSS (profile, navigation, API keys management). Implemented Google OAuth2 authentication (Authorization Code Flow, HTTP-only cookie sessions). Deployed ML models as isolated Docker containers via the Docker SDK. Maintained full deployment pipeline with Docker Compose and GitHub Actions CI/CD.',
+    descriptionFr:
+      'API REST CRUD avec FastAPI et PostgreSQL. Frontend Next.js / TypeScript / Tailwind CSS : profil, navigation, gestion des clés API. Authentification OAuth2 Google (Authorization Code Flow, sessions HTTP-only cookie). Déploiement de modèles ML en conteneurs Docker via le SDK Docker. Pipeline CI/CD avec Docker Compose et GitHub Actions.',
+    year: '2026',
+    link: 'https://github.com/AitSaad0/OrcaML',
+  },
+  {
+    index: '03',
     title: 'Spring Boot CTF App',
     subtitle: 'REST API · MVC · Challenge-based backend',
     tags: ['Java', 'Spring Boot', 'REST', 'MVC'],
@@ -25,10 +37,10 @@ const projects = [
     descriptionFr:
       'Conception d\'endpoints REST avec architecture MVC et logique backend complète pour un système de challenges CTF.',
     year: '2026',
-    link: '#',
+    link: 'https://github.com/AitSaad0/ctf-project',
   },
   {
-    index: '03',
+    index: '04',
     title: 'Internship — Faculty of Medicine',
     subtitle: 'Next.js · Full-stack · Exam results feature',
     tags: ['Next.js', 'Full-stack', 'React'],
@@ -40,7 +52,7 @@ const projects = [
     link: '#',
   },
   {
-    index: '04',
+    index: '05',
     title: 'Carpooling Desktop App',
     subtitle: 'Java / JavaFX · JDBC / Hibernate · DAO',
     tags: ['Java', 'JavaFX', 'Hibernate', 'JDBC'],
@@ -52,7 +64,7 @@ const projects = [
     link: '#',
   },
   {
-    index: '05',
+    index: '06',
     title: 'Student Management System',
     subtitle: 'PHP · CRUD · Web application',
     tags: ['PHP', 'MySQL', 'CRUD', 'Web'],
